@@ -21,6 +21,7 @@ import Game from "./pages/Game";
 import Profile from "./pages/Profile";
 import Footer from "./components/Footer/Footer";
 
+
 const httpLink = createHttpLink({
   uri: "/graphql",
 });
