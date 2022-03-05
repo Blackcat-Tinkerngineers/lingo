@@ -1,9 +1,9 @@
 {
+  "proxy": "http://localhost:3001",
   "name": "socialwordle",
   "homepage": "https://github.com/leticianardi/final--socialwordle",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001",
   "dependencies": {
     "@apollo/client": "^3.5.9",
     "@testing-library/jest-dom": "^5.16.1",
@@ -23,7 +23,7 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
-    "start": "node App.tsx",
+    "start": "react-scripts start",
     "predeploy": "GENERATE_SOURCEMAP=false react-scripts build",
     "deploy": "gh-pages -d build",
     "build": "GENERATE_SOURCEMAP=false react-scripts build",
