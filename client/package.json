@@ -23,7 +23,7 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
     "predeploy": "GENERATE_SOURCEMAP=false react-scripts build",
     "deploy": "gh-pages -d build",
     "build": "GENERATE_SOURCEMAP=false react-scripts build",
