@@ -19,7 +19,8 @@ express()
       res.sendFile(path.join(__dirname, "/../../client/build", "index.html"));
     });
   }
-  
+
+require("dotenv").config();
 
 const server = new ApolloServer({
   typeDefs,
