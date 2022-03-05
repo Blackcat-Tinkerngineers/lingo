@@ -9,7 +9,7 @@ mongoose.connect(uri,
     useCreateIndex:true
   });
 
-const connection = mongoose.connection;
+const connection = mongoose.createConnection();
 connection.once("open", () => {
   console.log("MongoDB database connection established successfully");
 });

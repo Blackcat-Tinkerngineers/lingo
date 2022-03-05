@@ -21,7 +21,6 @@ express()
     });
   }
 
-require("dotenv").config();
 
 const server = new ApolloServer({
   typeDefs,
