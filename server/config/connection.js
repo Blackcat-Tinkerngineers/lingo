@@ -1,14 +1,18 @@
-const mongoose = require("mongoose");
-const dotenv = require("dotenv");
-require('dotenv').config({ path: 'ENV_FILENAME' });
+require('dotenv').config();
+const mongoose = require('mongoose');
 
-const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://wordlingoers:t0OpX5WYYXMiutuV@cluster0.1ckxt.mongodb.net/wordlingodb?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
+const mySecret = process.env['cluster0']
+
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://localhost:27017/wordlingo",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
 
 module.exports = mongoose.connection;
+
+
+
+
