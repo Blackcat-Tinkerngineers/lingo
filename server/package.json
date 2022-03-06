@@ -5,7 +5,10 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
+<<<<<<< HEAD
     "start": "env-cmd -f .env.staging react-scripts start",
+=======
+>>>>>>> c6244dfb8588a18a28978727c2a494d079f7b1f0
     "watch": "nodemon",
     "seed": "node seeders/seeds.js"
   },
@@ -16,7 +19,10 @@
     "apollo-server-express": "^2.25.3",
     "bcrypt": "^4.0.1",
     "dotenv": "^16.0.0",
+<<<<<<< HEAD
     "env-cmd": "^10.1.0",
+=======
+>>>>>>> c6244dfb8588a18a28978727c2a494d079f7b1f0
     "express": "^4.17.1",
     "graphql": "^15.8.0",
     "jsonwebtoken": "^8.5.1",
