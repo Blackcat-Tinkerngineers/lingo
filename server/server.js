@@ -29,6 +29,13 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 
+import { API_ROOT } from 'constants/environment';
+
+const requestMyAwesomeService = () => {
+	const data = await fetch(`${API_ROOT}awesome_route`)
+	...
+}
+
 
 db.once("open", () => {
   app.listen(PORT, () => {
