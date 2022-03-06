@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server/server.js",
+    "start": "env-cmd -f .env react-scripts start",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
@@ -13,11 +13,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^7.0.0"
+    "concurrently": "^7.0.0",
+    "dotenv-webpack": "^7.1.0"
   },
   "dependencies": {
     "@apollo/client": "^3.5.9",
     "build": "^0.1.4",
+    "env-cmd": "^10.1.0",
     "jsonwebtoken": "^8.5.1"
   }
 }
